@@ -5,7 +5,7 @@
 }
 
 body {
-    background:  linear-gradient(90deg,rgb(143, 230, 237) ,blueviolet);
+    background:  linear-gradient(180deg, #1ca3ec,rgb(129, 229, 236));
     height: 100%;
 }
 
@@ -33,6 +33,7 @@ body {
     justify-content: center;
     align-items: center;
 
+
 }
 
 /*whater color*/
@@ -50,6 +51,7 @@ body {
     background: linear-gradient(to bottom, transparent 0%, #1ca3ec 100%);
     transition: height 1s ease;
     bottom: 0;
+    border: 50%;
 
 }
 

@@ -1,5 +1,5 @@
 const Glass = document.querySelectorAll(".glass")
-const Water = document.querySelectorAll(".glass .water") 
+const Water = document.querySelectorAll(".glass .water")
 const bottle = document.querySelector(".bottle")
 
 
@@ -14,17 +14,22 @@ Glass.forEach((glass, i) => {
 
         Water.forEach((water, j) => {
 
-            if (i === j) {
-
-                water.style.transition = "all 0.9s ease-in";
-                water.style.height = "100%";
-                bottleHeight += 12.5
-                bottle.children[0].style.height = bottleHeight + "%"
 
 
-                localStorage.setItem("elemntHeights", JSON.stringify(savedElement))
 
-            }
+                if (i === j && bottleHeight<100) {
+
+                    water.style.transition = "all 0.9s ease-in";
+                    water.style.height = "100%";
+                    bottleHeight += 12.5
+                    bottle.children[0].style.height = bottleHeight + "%"
+                    
+                }   
+
+
+                // localStorage.setItem("elemntHeights", JSON.stringify(savedElement))
+
+
 
         })
 
